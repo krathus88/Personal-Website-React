@@ -1,0 +1,66 @@
+.font-main {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.font-secondary {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #fa6559;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+}
+
+.row {
+    margin-right: 0!important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.description {
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+.progress-bar {
+    border: 1.2px solid #000;
+}
+
+.skill-item {
+    cursor: pointer;
+    position: relative;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+}
+
+.slider {
+    background: #343434; /* Set the background color of the slider */
+    height: 2px; /* Set the height of the slider */
+    width: 25%;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+    bottom: 0;
+}
+
