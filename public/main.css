@@ -15,36 +15,25 @@ footer {
     color: white;
 }
 
+/* Fixes horizontal scrolling caused by row */
 .row {
     margin-right: 0!important;
 }
 
-.cursor-pointer {
-    cursor: pointer;
+/* Title Line */
+.title-line {
+    display: flex;
+    align-items: center;
 }
 
-.description {
-    display: block;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-    transition: transform 0.5s;
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000; /* Change the color as needed */
+    margin: 0 10px; /* Adjust the margin as needed */
 }
 
-.progress-bar {
-    border: 1.2px solid #000;
-}
-
-.skill-item {
-    cursor: pointer;
-    position: relative;
-}
-
+/* CONTENTS */
 .contents {
     display: flex;
     flex-direction: row;
@@ -55,7 +44,8 @@ footer {
     z-index: 1000;
 }
 
-.slider {
+/* Slider for Contents tab */
+.slider { 
     background: #343434; /* Set the background color of the slider */
     height: 2px; /* Set the height of the slider */
     width: 25%;
@@ -64,3 +54,43 @@ footer {
     bottom: 0;
 }
 
+/* PORTFOLIO */
+/* Handles Card Hovering Effect in Portfolio tab */
+#portfolio .col {
+    position: relative;
+    overflow: hidden;
+}
+
+.description {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.5s;
+}
+
+.card:hover .description {
+    transform: translateY(0);
+}
+
+#portfolio .card {
+    min-height: 275px
+} 
+
+#portfolio p {
+    padding-bottom: 4rem !important;
+}
+
+
+/* SKILLS */
+.progress-bar {
+    border: 1.2px solid #000;
+}
+
+.skill-item {
+    cursor: pointer;
+}

@@ -2,14 +2,20 @@ import React from "react";
 
 function Header() {
   return (
-    <header id="home" className="row py-2 align-items-center shadow-lg">
-        <div className="col-md-6 p-3 p-md-5 pt-md-3">
-            <h2 className="text-center font-secondary">Hi,</h2>
-            <h1 className="display-4 fw-bolder lh-1 text-body-emphasis text-center font-main">I'm Marco</h1>
-            <p className="lead text-center font-secondary">a programmer</p>
+    <header id="home" className="row py-md-2 align-items-center">
+        <div className="col-md-6 text-center p-3 mb-md-5">
+            <h2 className="font-secondary">Hi,</h2>
+            <h1 className="display-4 font-main fw-bolder text-body-emphasis lh-1">I'm Marco</h1>
+            <p className="lead font-secondary mb-0">a programmer</p>
         </div>
-        <div className="col-md-6 p-0 overflow-hidden shadow-lg">
-            <img className="rounded-start-3" src={process.env.PUBLIC_URL + "/assets/michelangelo.jpg"} alt="Picture of Marco" width="100%" style={{objectFit: "cover", minHeight: "360px"}} />
+        <div className="col-md-6 p-0">
+            <img 
+                className="rounded-start-3" 
+                src={"/assets/michelangelo.jpg"} 
+                alt="Marco" 
+                width="100%" 
+                style={{objectFit: "cover"}} 
+            />
         </div>
     </header>
   );
