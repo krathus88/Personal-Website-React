@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContentBox = React.forwardRef((props, ref) => {
+function ContentBox(props) {
     function handleClick() {
         props.onClick(props.id);
     }
@@ -15,6 +15,6 @@ const ContentBox = React.forwardRef((props, ref) => {
             <h3 className="mb-0">{props.name}</h3>
         </a>
     );
-});
+};
 
 export default ContentBox;
