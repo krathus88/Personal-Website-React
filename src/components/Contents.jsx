@@ -12,7 +12,7 @@ function Contents(props) {
     };
     
     return (
-        <div className="contents">
+        <div className="contents shadow">
             <ContentBox 
                 id="0"
                 name="Home"
@@ -28,7 +28,7 @@ function Contents(props) {
             <ContentBox 
                 id="2"
                 name="Experience"
-                href="#experience"
+                href="#portfolio"
                 onClick={handleContentBoxClick}
             />
             <ContentBox 
