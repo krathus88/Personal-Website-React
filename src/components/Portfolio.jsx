@@ -5,6 +5,7 @@ import Title from "./Title";
 import ContainerSocial from "./ContainerSocial";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import portfolioCardData from "../portfolioCardData";
 
 function Portfolio() {
 
@@ -32,24 +33,15 @@ function Portfolio() {
             <Title title="Portfolio" />
             <div className="overflow-visible" id="portfolio-projects">
                 <Slider {...sliderSettings}>
-                    <PortfolioCard
-                    title="Project 1"
-                    description="Hello world"
-                    bgImage="./assets/michelangelo.jpg"
-                    href="https://translate.google.pt/"
-                    />
-                    <PortfolioCard
-                    title="Project 2"
-                    description="Hello world"
-                    bgImage="./assets/michelangelo.jpg"
-                    href="https://translate.google.pt/"
-                    />
-                    <PortfolioCard
-                    title="Project 3"
-                    description="Hello world"
-                    bgImage="./assets/michelangelo.jpg"
-                    href="https://translate.google.pt/"
-                    />
+                    {portfolioCardData.map((data, index) => (
+                        <PortfolioCard 
+                            key={index}
+                            title={data.title}
+                            description={data.description}
+                            bgImage={data.bgImage}
+                            href={data.href}
+                        />
+                    ))}
                 </Slider>
             </div>
             <div className="text-center mt-5">

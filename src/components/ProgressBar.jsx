@@ -4,8 +4,6 @@ function ProgressBar(props) {
     let styling = {};
 
     if (props.hasScrolled) {
-        console.log("hello");
-        
         styling = {
             animation: "progressBarAnimation 0.5s ease-out forwards",
             animationDelay: `${props.id / 2}s`

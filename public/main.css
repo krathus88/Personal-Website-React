@@ -7,6 +7,9 @@
 }
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
     background-color: #f0f1f1;
 }
 
@@ -36,11 +39,6 @@ footer {
     height: 140px;
     animation: floatUpDown 5s ease-in-out infinite;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-}
-
-/* Fixes horizontal scrolling caused by row */
-.row {
-    margin-right: 0!important;
 }
 
 /* Title Line */

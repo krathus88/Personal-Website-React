@@ -1,11 +1,12 @@
 import React from "react";
 import ContentBox from "./ContentsBox";
 import Slider from "./Slider";
+import contentBoxData from "../contentBoxData"
 
 function Contents(props) {
 
     const [sliderPosition, setSliderPosition] = React.useState(0);
-    
+
     function handleContentBoxClick(index) {
         // Set the slider position based on the clicked ContentBox index
         setSliderPosition(index * 100);
@@ -13,30 +14,15 @@ function Contents(props) {
     
     return (
         <div className="contents shadow">
-            <ContentBox 
-                id="0"
-                name="Home"
-                href="#home"
-                onClick={handleContentBoxClick}
-            />
-            <ContentBox 
-                id="1"
-                name="About"
-                href="#about"
-                onClick={handleContentBoxClick}
-            />
-            <ContentBox 
-                id="2"
-                name="Experience"
-                href="#portfolio"
-                onClick={handleContentBoxClick}
-            />
-            <ContentBox 
-                id="3"
-                name="Contact"
-                href="#contact"
-                onClick={handleContentBoxClick}
-            />
+            {contentBoxData.map((data, index) => (
+                <ContentBox 
+                    key={index}
+                    id={index}
+                    name={data.name}
+                    href={data.href}
+                    onClick={handleContentBoxClick}
+                />
+            ))}
             <Slider position={sliderPosition} />
         </div>
     )

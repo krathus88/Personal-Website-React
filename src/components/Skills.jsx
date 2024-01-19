@@ -8,33 +8,27 @@ function Skills() {
 
     const [hasScrolled, setHasScrolled] = React.useState(false);
 
-  React.useEffect(() => {
-    const targetElement = document.getElementById("experience");
+    React.useEffect(() => {
+        const targetElement = document.getElementById("experience");
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setHasScrolled(true);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                setHasScrolled(true);
+                }
+            });
+        }, { threshold: 0.8 });
+
+        if (targetElement) {
+            observer.observe(targetElement);
         }
-      });
-    }, { threshold: 0.8 });
 
-    if (targetElement) {
-      observer.observe(targetElement);
-    }
-
-    return () => {
-      if (targetElement) {
-        observer.unobserve(targetElement);
-      }
-    };
-  }, []);
-
-  // Log the updated state in the console
-  React.useEffect(() => {
-    console.log(hasScrolled);
-  }, [hasScrolled]);
-
+        return () => {
+            if (targetElement) {
+                observer.unobserve(targetElement);
+            }
+        };
+    }, []);
 
     return (
         <div className="container mb-5" id="experience">
