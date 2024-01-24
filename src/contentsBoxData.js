@@ -1,4 +1,4 @@
-const contentBoxData = [
+const contentsBoxData = [
     {
         id: "0",
         name: "Home",
@@ -21,4 +21,4 @@ const contentBoxData = [
     },
 ];
 
-export default contentBoxData;
+export default contentsBoxData;

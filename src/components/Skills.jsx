@@ -1,37 +1,19 @@
 import React from "react";
+import { useInView } from 'react-intersection-observer';
 import Title from "./Title";
 import SkillsTopic from "./SkillsTopic";
 import ProgressBar from "./ProgressBar";
 import progressBarData from "../progressBarData";
 
 function Skills() {
-
-    const [hasScrolled, setHasScrolled] = React.useState(false);
-
-    React.useEffect(() => {
-        const targetElement = document.getElementById("experience");
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                setHasScrolled(true);
-                }
-            });
-        }, { threshold: 0.8 });
-
-        if (targetElement) {
-            observer.observe(targetElement);
-        }
-
-        return () => {
-            if (targetElement) {
-                observer.unobserve(targetElement);
-            }
-        };
-    }, []);
+    const [ref, inView] = useInView({
+        /* Optional options */
+        threshold: 0.8,
+        triggerOnce: true,
+    });
 
     return (
-        <div className="container mb-5" id="experience">
+        <div className="container-md mb-5" id="experience" ref={ref}>
             <Title title="Skills" />
             <div className="col-sm-12 col-md-10 col-lg-8 mx-auto">
                 <div className="row text-center font-secondary fs-5 mb-3">
@@ -46,13 +28,13 @@ function Skills() {
                             id={index}
                             value={data.value}
                             text={data.text}
-                            hasScrolled={hasScrolled}
+                            hasScrolled={inView}
                         />
                     ))}
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Skills;

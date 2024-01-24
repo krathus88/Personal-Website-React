@@ -1,8 +1,8 @@
 import React from "react";
 
-function Header() {
+function Header(props) {
   return (
-    <header id="home" className="row py-md-2 align-items-center">
+    <header id="home" ref={props.passRef} className="row py-md-2 align-items-center">
         <div className="col-md-6 text-center p-3 mb-md-5">
             <h2 className="font-secondary">Hi,</h2>
             <h1 className="display-4 font-main fw-bolder text-body-emphasis lh-1">I'm Marco</h1>

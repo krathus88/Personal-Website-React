@@ -28,8 +28,8 @@ function Portfolio() {
         arrows: false
     };
 
-    return (
-        <div className="container mb-5" id="portfolio">
+    return ( // container-fluid
+        <div id="portfolio" className="container-md mb-5">
             <Title title="Portfolio" />
             <div className="overflow-visible" id="portfolio-projects">
                 <Slider {...sliderSettings}>

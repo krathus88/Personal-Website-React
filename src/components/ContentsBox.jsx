@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContentBox(props) {
+function ContentsBox(props) {
     function handleClick() {
         props.onClick(props.id);
     }
@@ -17,4 +17,4 @@ function ContentBox(props) {
     );
 };
 
-export default ContentBox;
+export default ContentsBox;

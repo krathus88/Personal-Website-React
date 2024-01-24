@@ -1,26 +1,31 @@
 import React from "react";
-import ContentBox from "./ContentsBox";
+import ContentsBox from "./ContentsBox";
 import Slider from "./Slider";
-import contentBoxData from "../contentBoxData"
+import contentsBoxData from "../contentsBoxData"
 
 function Contents(props) {
 
-    const [sliderPosition, setSliderPosition] = React.useState(0);
+    const [sliderPosition, setSliderPosition] = React.useState(props.currentSectionIndex * 100);
 
-    function handleContentBoxClick(index) {
+    React.useEffect(() => {
+        // Update the slider position whenever the currentSectionIndex changes
+        setSliderPosition(props.currentSectionIndex * 100);
+    }, [props.currentSectionIndex]);
+
+    function handleSliderPosition(index) {
         // Set the slider position based on the clicked ContentBox index
         setSliderPosition(index * 100);
-    };
+    }
     
     return (
         <div className="contents shadow">
-            {contentBoxData.map((data, index) => (
-                <ContentBox 
+            {contentsBoxData.map((data, index) => (
+                <ContentsBox 
                     key={index}
                     id={index}
                     name={data.name}
                     href={data.href}
-                    onClick={handleContentBoxClick}
+                    onClick={() => handleSliderPosition(index)}
                 />
             ))}
             <Slider position={sliderPosition} />
