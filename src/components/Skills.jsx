@@ -57,7 +57,7 @@ function Skills() {
                 <div className="mt-2">
                     {filteredProgressBarData.map((data, index) => (
                         <ProgressBar 
-                            key={`${key}-${index}`} // Change key when selected category changes
+                            key={`${key}-${index}`}
                             id={index}
                             value={data.value}
                             text={data.text}

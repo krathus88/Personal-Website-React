@@ -60,7 +60,6 @@ function App() {
                 <Portfolio />
                 <Skills />
             </div>
-            
             <Contact passRef={contactIntersectionRef} />
             <Footer />
         </div>

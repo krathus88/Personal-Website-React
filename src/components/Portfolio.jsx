@@ -28,7 +28,7 @@ function Portfolio() {
         arrows: false
     };
 
-    return ( // container-fluid
+    return (
         <div id="portfolio" className="container-md mb-5">
             <Title title="Portfolio" />
             <div className="overflow-visible" id="portfolio-projects">
