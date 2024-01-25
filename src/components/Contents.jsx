@@ -28,7 +28,11 @@ function Contents(props) {
                     onClick={() => handleSliderPosition(index)}
                 />
             ))}
-            <Slider position={sliderPosition} />
+            <Slider 
+                sliderPosition={sliderPosition}
+                position="absolute"
+                width="25%"
+            />
         </div>
     )
 }

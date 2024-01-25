@@ -15,10 +15,15 @@ body {
 
 header {
     background-color: #fa6559;
+    min-height: 77vh;
 }
 
 #about {
     min-height: 65vh;
+}
+
+#experience {
+    min-height: 50vh;
 }
 
 #contact {
@@ -75,10 +80,8 @@ footer {
 
 /* Slider for Contents tab */
 .slider { 
-    background: #343434;
     height: 2px;
-    width: 25%;
-    position: absolute;
+    background: #343434;
     transition: transform 0.5s ease-in-out;
     bottom: 0;
     left: 0;
@@ -113,6 +116,7 @@ footer {
  }
 
 #portfolio .card {
+    max-height: 80vh;
     box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.9);
 } 
 
@@ -150,6 +154,34 @@ footer {
 
 .skill-item {
     cursor: pointer;
+}
+
+.legend-line {
+    width: 100%;
+    height: 2px;
+    background-color: #00000070;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.marker {
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.marker span {
+    color: #000000be;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 10px;
+    background-color: #00000070;
+    position: absolute;
+    top: -5px;
+    left: 50%;
 }
 
 /* CONTACT */

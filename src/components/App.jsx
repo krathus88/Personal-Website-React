@@ -14,9 +14,9 @@ function App() {
 
     // Use useInView for each section
     const { ref: headerIntersectionRef } = useInView({
-        threshold: 0.65,
-        triggerOnce: false,
+        threshold: 0.2,
         onChange: (headerInView) => {
+            console.log("header 1");
             if (headerInView) {
                 setCurrentSectionIndex(0);
             }
@@ -25,9 +25,9 @@ function App() {
 
     const { ref: aboutIntersectionRef } = useInView({
         threshold: 1,
-        triggerOnce: false,
         onChange: (aboutInView) => {
             if (aboutInView) {
+                console.log("about 2");
                 setCurrentSectionIndex(1);
             }
         },
@@ -35,7 +35,6 @@ function App() {
 
     const { ref: portfolioIntersectionRef } = useInView({
         threshold: 0.4,
-        triggerOnce: false,
         onChange: (portfolioInView) => {
             if (portfolioInView) {
                 setCurrentSectionIndex(2);
@@ -44,8 +43,7 @@ function App() {
     });
 
     const { ref: contactIntersectionRef } = useInView({
-        threshold: 0.75,
-        triggerOnce: false,
+        threshold: 0.9,
         onChange: (inView) => {
             if (inView) {
                 setCurrentSectionIndex(3);

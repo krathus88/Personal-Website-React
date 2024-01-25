@@ -3,7 +3,9 @@ import React from "react";
 function Slider(props) {
 
     const sliderStyle = {
-        transform: `translateX(${props.position}%)`
+        transform: `translateX(${props.sliderPosition}%)`,
+        position: `${props.position}`,
+        width: `${props.width}`
     }
 
     return (
