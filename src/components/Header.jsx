@@ -11,7 +11,7 @@ function Header(props) {
         <div className="col-md-7 p-0">
             <img 
                 className="rounded-start-3 bg-image-header" 
-                src={"/assets/background-header.jpg"} 
+                src={"./assets/background-header.jpg"} 
                 alt="Marco" 
             />
         </div>
