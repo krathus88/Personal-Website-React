@@ -4,6 +4,15 @@
     }
 }
 
+@media (max-width: 767px) {
+    .prev-arrow {
+        transform: translateX(-82%) !important;
+    }
+    .next-arrow {
+        transform: translateX(82%) !important;
+    }
+}
+
 .font-main {
     font-family: 'DM Serif Text', serif;
 }
@@ -122,6 +131,42 @@ footer {
 
 #portfolio-projects {
     cursor: grab;
+}
+
+.custom-btn {
+    width: 500px;
+    height: 100%;
+    z-index: 100;
+}
+
+.custom-btn:hover {
+    background-color: rgba(39, 39, 39, 0.5); /* Change to grey when hovering */
+}
+
+.custom-btn svg {
+    position: absolute; /* Position the SVG absolutely */
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.prev-arrow {
+    left: 0;
+    top: 0;
+    transform: translateX(-102%);
+} 
+
+.prev-arrow svg {
+    left: 90%;
+}
+
+.next-arrow {
+    right: 0;
+    top: 0;
+    transform: translateX(102%);
+}
+
+.next-arrow svg {
+    right: 90%;
 }
 
 

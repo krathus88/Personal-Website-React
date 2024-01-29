@@ -6,6 +6,7 @@ import ContainerSocial from "./ContainerSocial";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import portfolioCardData from "../portfolioCardData";
+import CustomCarouselArrow from "./CustomCarouselArrow";
 
 function Portfolio() {
 
@@ -25,7 +26,15 @@ function Portfolio() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        arrows: true,
+        prevArrow: <CustomCarouselArrow
+            classButton="prev-arrow"
+            svgPath={<path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>}
+            />,
+        nextArrow: <CustomCarouselArrow 
+            classButton="next-arrow"
+            svgPath={<path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>}
+            />,
     };
 
     return (
