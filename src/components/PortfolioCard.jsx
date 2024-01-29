@@ -15,7 +15,7 @@ function PortfolioCard(props) {
                     ))}
                 </div>
                 <h3 className="mt-auto mb-0 px-4 pb-3 z-1">
-                    <a className="bg-dark p-1 rounded text-reset text-decoration-none font-secondary fw-bold" href={props.href}>{props.title}</a>
+                    <a className="bg-dark p-1 rounded text-reset text-decoration-none font-secondary fw-bold" href={props.href} target="_blank" rel="noreferrer">{props.title}</a>
                 </h3>
             </div>
         </div>
