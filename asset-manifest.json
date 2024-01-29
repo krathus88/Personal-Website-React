@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Personal-Website-React/static/css/main.97b59392.css",
-    "main.js": "/Personal-Website-React/static/js/main.ab0097d5.js",
-    "static/media/slick.svg": "/Personal-Website-React/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/Personal-Website-React/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/Personal-Website-React/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/Personal-Website-React/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/Personal-Website-React/index.html",
-    "main.97b59392.css.map": "/Personal-Website-React/static/css/main.97b59392.css.map",
-    "main.ab0097d5.js.map": "/Personal-Website-React/static/js/main.ab0097d5.js.map"
+    "main.css": "/krathus88/static/css/main.6e7e73e0.css",
+    "main.js": "/krathus88/static/js/main.9e8af0f3.js",
+    "static/media/slick.svg": "/krathus88/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/krathus88/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/krathus88/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/krathus88/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/krathus88/index.html",
+    "main.6e7e73e0.css.map": "/krathus88/static/css/main.6e7e73e0.css.map",
+    "main.9e8af0f3.js.map": "/krathus88/static/js/main.9e8af0f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.97b59392.css",
-    "static/js/main.ab0097d5.js"
+    "static/css/main.6e7e73e0.css",
+    "static/js/main.9e8af0f3.js"
   ]
 }
