@@ -10,11 +10,9 @@ function Header(props) {
         </div>
         <div className="col-md-7 p-0">
             <img 
-                className="rounded-start-3" 
-                src={"/assets/michelangelo.jpg"} 
+                className="rounded-start-3 bg-image-header" 
+                src={"/assets/background-header.jpg"} 
                 alt="Marco" 
-                width="100%" 
-                style={{objectFit: "cover"}} 
             />
         </div>
     </header>

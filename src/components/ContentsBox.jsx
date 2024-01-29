@@ -7,7 +7,7 @@ function ContentsBox(props) {
 
     return (
         <a
-            className="col-3 py-3 text-center text-reset text-decoration-none cursor-pointer font-secondary"
+            className="col-3 py-3 text-center text-reset text-decoration-none cursor-pointer font-main"
             href={props.href}
             onClick={handleClick}
             data-index={props.id}

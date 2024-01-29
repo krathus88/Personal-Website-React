@@ -16,7 +16,6 @@ function App() {
     const { ref: headerIntersectionRef } = useInView({
         threshold: 0.2,
         onChange: (headerInView) => {
-            console.log("header 1");
             if (headerInView) {
                 setCurrentSectionIndex(0);
             }
@@ -27,7 +26,6 @@ function App() {
         threshold: 1,
         onChange: (aboutInView) => {
             if (aboutInView) {
-                console.log("about 2");
                 setCurrentSectionIndex(1);
             }
         },

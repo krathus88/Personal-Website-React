@@ -20,15 +20,12 @@ function Contact(props) {
             <div className="d-flex justify-content-center my-auto">
                 <div className="card align-items-center text-center col-12 col-lg-10 col-xl-9 col-xxl-8 rounded-5 shadow-lg">
                     <div className="card-header">
-                        <ProfileImage src="./assets/male-example.jpg" />
+                        <ProfileImage src="./assets/contact-img.jpg" />
                         <h2 className="font-secondary">Marco Ribeiro</h2>
                     </div>
                     <div className="card-body">
                         <p>Thanks for visiting! Feel free to contact me through one of the methods below.</p>
                         <div className="mt-4">
-                            <p className="font-secondary my-3">
-                                <span className="fw-semibold">Email: </span>marcoribeiro4@hotmail.com
-                            </p>
                             <ContainerSocial 
                                 text="Connect on LinkedIn"
                                 href="https://www.linkedin.com/in/marco-ribeiro-663391204/"
