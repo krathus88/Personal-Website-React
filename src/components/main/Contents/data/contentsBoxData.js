@@ -11,7 +11,7 @@ const contentsBoxData = [
     },
     {
         id: "2",
-        name: "Experience",
+        name: "Skills",
         href: "#portfolio",
     },
     {
