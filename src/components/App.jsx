@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./main/Header/Header";
-import Footer from "./Footer";
+import Footer from "./main/Footer/Footer";
 import Contents from "./main/Contents/Contents";
 import About from "./main/About/About";
 import Portfolio from "./main/Portfolio/Portfolio";
